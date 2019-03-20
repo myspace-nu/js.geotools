@@ -1,0 +1,30 @@
+{
+  "name": "js.geotools",
+  "version": "1.0.0",
+  "description": "\u0016A collection of JavaScript geolocation tools",
+  "main": "dist/geotools.min.js",
+  "files": [
+    "dist/*.min.js"
+  ],
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myspace-nu/js.geotools.git"
+  },
+  "keywords": [
+    "geotools",
+    "zipcode"
+  ],
+  "author": "Johan Johansson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myspace-nu/js.geotools/issues"
+  },
+  "homepage": "https://github.com/myspace-nu/js.geotools#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-uglify": "^4.0.0"
+  }
+}
