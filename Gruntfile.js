@@ -20,6 +20,14 @@ module.exports = function(grunt) {
                     {
                         src: 'src/geotools-swedish-zipcodes.js',
                         dest: 'dist/geotools-swedish-zipcodes.min.js'
+                    },
+                    {
+                        src: 'src/geotools-swedish-zipcodes-cities.js',
+                        dest: 'dist/geotools-swedish-zipcodes-cities.min.js'
+                    },
+                    {
+                        src: 'src/geotools-swedish-zipcodes-cities-counties.js',
+                        dest: 'dist/geotools-swedish-zipcodes-cities-counties.min.js'
                     }
                 ]
             }
