@@ -1,6 +1,6 @@
 {
   "name": "js.geotools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\u0016A collection of JavaScript geolocation tools",
   "main": "dist/geotools.min.js",
   "files": [
