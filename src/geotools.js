@@ -27,6 +27,8 @@ function geotools(){
 				if(zip>=instance.zipdb[i].a && zip <=instance.zipdb[i].b){
 					this.latitude = instance.zipdb[i].t;
 					this.longitude = instance.zipdb[i].n;
+					this.city = instance.zipdb[i].c;
+					this.county = instance.zipdb[i].r;
 				}
 			}
 			return this;
