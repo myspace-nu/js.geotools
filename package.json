@@ -26,5 +26,8 @@
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-contrib-uglify": "^4.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.14"
   }
 }
