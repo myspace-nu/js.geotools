@@ -2,6 +2,7 @@
 
 function geotools(){
 	var instance = this;
+	this.earthRadius = 6371008;
 	this.position = function(latitude,longitude,altitude){
 		if(typeof latitude == 'object'){
 			this.latitude = latitude.latitude;
@@ -21,6 +22,17 @@ function geotools(){
 				Math.sin(dLon/2) * Math.sin(dLon/2); 
 			var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
 			return earthRadius * c;
+		}
+		this.displace = function(bearing, distance){
+			var lat = this.latitude * (Math.PI/180);
+			var lon = this.longitude * (Math.PI/180);
+			var lat2 = Math.asin( Math.sin(lat)*Math.cos(distance/this.earthRadius) +
+				 Math.cos(lat)*Math.sin(distance/this.earthRadius)*Math.cos(bearing));
+			var lon2 = lon + Math.atan2(Math.sin(bearing)*Math.sin(distance/this.earthRadius)*Math.cos(lat),
+				Math.cos(distance/this.earthRadius)-Math.sin(lat)*Math.sin(lat2))
+			lat2 = lat2 * (180/Math.PI);
+			lon2 = lon2 * (180/Math.PI);
+			return new this.position({ 'latitude':lat2, 'longitude':lon2 });
 		}
 		this.fromZip = function(zip){
 			for(var i in instance.zipdb){
