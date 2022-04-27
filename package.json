@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/myspace-nu/js.geotools#readme",
   "devDependencies": {
-    "grunt": "^1.4.0",
+    "grunt": "^1.5.2",
     "grunt-contrib-uglify": "^4.0.0"
   },
   "dependencies": {
