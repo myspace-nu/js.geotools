@@ -28,6 +28,42 @@ module.exports = function(grunt) {
                     {
                         src: 'src/geotools-swedish-zipcodes-cities-counties.js',
                         dest: 'dist/geotools-swedish-zipcodes-cities-counties.min.js'
+                    },
+                    {
+                        src: 'src/geotools-danish-zipcodes.js',
+                        dest: 'dist/geotools-danish-zipcodes.min.js'
+                    },
+                    {
+                        src: 'src/geotools-danish-zipcodes-cities.js',
+                        dest: 'dist/geotools-danish-zipcodes-cities.min.js'
+                    },
+                    {
+                        src: 'src/geotools-danish-zipcodes-cities-counties.js',
+                        dest: 'dist/geotools-danish-zipcodes-cities-counties.min.js'
+                    },
+                    {
+                        src: 'src/geotools-finnish-zipcodes.js',
+                        dest: 'dist/geotools-finnish-zipcodes.min.js'
+                    },
+                    {
+                        src: 'src/geotools-finnish-zipcodes-cities.js',
+                        dest: 'dist/geotools-finnish-zipcodes-cities.min.js'
+                    },
+                    {
+                        src: 'src/geotools-finnish-zipcodes-cities-counties.js',
+                        dest: 'dist/geotools-finnish-zipcodes-cities-counties.min.js'
+                    },
+                    {
+                        src: 'src/geotools-norwegian-zipcodes.js',
+                        dest: 'dist/geotools-norwegian-zipcodes.min.js'
+                    },
+                    {
+                        src: 'src/geotools-norwegian-zipcodes-cities.js',
+                        dest: 'dist/geotools-norwegian-zipcodes-cities.min.js'
+                    },
+                    {
+                        src: 'src/geotools-norwegian-zipcodes-cities-counties.js',
+                        dest: 'dist/geotools-norwegian-zipcodes-cities-counties.min.js'
                     }
                 ]
             }
